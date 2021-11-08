@@ -1,6 +1,9 @@
 import React from 'react';
-import {View, Text, Image, ActivityIndicator} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import Config from 'react-native-config';
+
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 import useFetch from '../../hooks/useFetch';
 import styles from './Details.style';
 
@@ -9,10 +12,10 @@ const Details = ({route}) => {
   const {loading, data, error} = useFetch(`${Config.API_URL}/${id}`);
 
   if (loading) {
-    return <ActivityIndicator size="large" />;
+    return <Loading />;
   }
   if (error) {
-    return <Text>{error}</Text>;
+    return <Error />;
   }
 
   return (

@@ -1,7 +1,9 @@
 import React from 'react';
-import {SafeAreaView, Text, FlatList, ActivityIndicator} from 'react-native';
+import {SafeAreaView, FlatList} from 'react-native';
 import Config from 'react-native-config';
 
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 import ProductCard from '../../components/ProductCard';
 import useFetch from '../../hooks/useFetch';
 
@@ -11,7 +13,7 @@ const Products = ({navigation}) => {
   const {loading, data, error} = useFetch(Config.API_URL);
 
   const handleSelect = id => {
-    navigation.navigate('Details Page', {id});
+    navigation.navigate('DetailsPage', {id});
   };
 
   const renderProduct = ({item}) => (
@@ -19,10 +21,10 @@ const Products = ({navigation}) => {
   );
 
   if (loading) {
-    return <ActivityIndicator size="large" />;
+    return <Loading />;
   }
   if (error) {
-    return <Text>{error}</Text>;
+    return <Error />;
   }
 
   return (
