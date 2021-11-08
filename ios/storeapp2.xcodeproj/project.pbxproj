@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		ABCB9314A8B5ED61237A1A04 /* libPods-storeapp2-storeapp2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC8F169EF4A276E36DDDD87 /* libPods-storeapp2-storeapp2Tests.a */; };
+		C3896B4D2739D749001AA6FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3896B4C2739D749001AA6FA /* GoogleService-Info.plist */; };
 		CDF89A200C9214683B3EDCBB /* libPods-storeapp2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D18223783FA69012721797A /* libPods-storeapp2.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		65A989A50996CEA7E9895860 /* Pods-storeapp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storeapp2.debug.xcconfig"; path = "Target Support Files/Pods-storeapp2/Pods-storeapp2.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = storeapp2/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D18223783FA69012721797A /* libPods-storeapp2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-storeapp2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3896B4C2739D749001AA6FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAC8501EFF75BA6D847CD907 /* Pods-storeapp2-storeapp2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storeapp2-storeapp2Tests.release.xcconfig"; path = "Target Support Files/Pods-storeapp2-storeapp2Tests/Pods-storeapp2-storeapp2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FDC8F169EF4A276E36DDDD87 /* libPods-storeapp2-storeapp2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-storeapp2-storeapp2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 		13B07FAE1A68108700A75B9A /* storeapp2 */ = {
 			isa = PBXGroup;
 			children = (
+				C3896B4C2739D749001AA6FA /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -114,7 +117,6 @@
 				57D8D9F72CB968B9862C52B9 /* Pods-storeapp2-storeapp2Tests.debug.xcconfig */,
 				EAC8501EFF75BA6D847CD907 /* Pods-storeapp2-storeapp2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,6 +247,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C3896B4D2739D749001AA6FA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +499,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.storeapp2;
 				PRODUCT_NAME = storeapp2;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -521,7 +524,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.storeapp2;
 				PRODUCT_NAME = storeapp2;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
