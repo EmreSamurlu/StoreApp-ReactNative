@@ -10,7 +10,7 @@ import useFetch from '../../hooks/useFetch';
 import styles from './Products.style';
 
 const Products = ({navigation}) => {
-  const {loading, data, error} = useFetch(Config.API_URL);
+  const {loading, data, error} = useFetch(Config.API_PRODUCT_URL);
 
   const handleSelect = id => {
     navigation.navigate('DetailsPage', {id});
