@@ -6,5 +6,9 @@ export default StyleSheet.create({
     margin: 10,
     backgroundColor: '#facd60',
     borderRadius: 10,
+    flexDirection: 'row',
+  },
+  input: {
+    flex: 1,
   },
 });
